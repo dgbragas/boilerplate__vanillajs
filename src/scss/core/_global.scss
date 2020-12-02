@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  line-height: 150%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+
+  &::selection {
+    background-color: var(--texts);
+    color: #fff;
+  }
+
+  &:not(h1, h2, h3, h4, h5, h6) {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: SedgwickAve;
+  font-weight: 700;
+  line-height: 133%;
+  margin: 0;
+}
+
+html, body {
+  background-color: var(--neutral-white);
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body, input, button {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}

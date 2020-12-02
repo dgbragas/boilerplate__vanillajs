@@ -1,0 +1,14 @@
+.container {
+  width: 1243px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include mediaSize(huge) {
+    width: 1150px;
+  }
+
+  @media screen and (max-width: 1140px) {
+    padding: 0px 24px;
+    width: 100%;
+  }
+}

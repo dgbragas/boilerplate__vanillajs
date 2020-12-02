@@ -1,0 +1,51 @@
+{
+  "name": "boilerplate__vanillajs",
+  "version": "1.0.0",
+  "repository": "https://github.com/dgbragas/boilerplate__vanillajs",
+  "author": "dgbragas",
+  "description": "VanillaJS boilerplate to startup projects using webpack",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitzen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "commit": "git commit"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "babel-loader": "^8.2.2",
+    "commitizen": "^4.2.2",
+    "css-loader": "^5.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^0.21.0",
+    "swiper": "^6.3.5",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+input {
+  background-color: transparent;
+  border: 1px solid rgba(74, 74, 74, .6);
+  border-radius: 4px;
+  padding: 0 24px;
+  height: 48px;
+  transition: color, opacity .3s ease;
+  width: 100%;
+
+  &::placeholder {
+    color: rgba(74, 74, 74, .4);
+    opacity: .4;
+  }
+}

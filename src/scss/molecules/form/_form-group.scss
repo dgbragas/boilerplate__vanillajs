@@ -1,0 +1,9 @@
+.form-group {
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+
+  &:not(.row-direction) {
+    flex-direction: column;
+  }
+}
